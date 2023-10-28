@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Banto",
+			"Path": "D:\\UE4\\Banto\\Banto\\Banto\\Source\\Banto.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BantoEditor",
+			"Path": "D:\\UE4\\Banto\\Banto\\Banto\\Source\\BantoEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
