@@ -10,37 +10,29 @@ UCLASS()
 class BANTO_API ACPP_CharBase : public ACharacter
 {
 	GENERATED_BODY()
-
 //変数
 public:
 	//めくりを確認するため
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Default)
 	bool IsFlipping = false;
-
 	//自分のY座標を取得する
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Default)
 	float MainYPos = 0.0f;
-
 	//敵のY座標を取得する
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Default)
 	float EnemyYPos = 0.0f;
-
 	//1Fを取得
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Default)
 	float OneFrame = 0.0f;
-
 private:
 	//角度計算用の数字
 	const float AngleCalcNum = 360.0f;
-
 public:
 	// Sets default values for this character's properties
 	ACPP_CharBase();
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
